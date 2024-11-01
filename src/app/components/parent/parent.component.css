@@ -1,0 +1,52 @@
+/* Centralizando o conteúdo do componente pai */
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Ajusta para que fique mais para cima */
+    height: 70vh; /* Ocupa 70% da altura da tela */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+  }
+  
+  h2 {
+    margin-right: 100px;
+  }
+
+  /* Estilizando os campos de entrada */
+  .task-input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Limita a largura máxima dos inputs */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: none; /* Remove borda */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilo do botão de adicionar tarefa */
+  .add-task-button {/* Cor azul */
+    background-color: white;
+    padding: 10px 15px;
+    color: #007bff; /* Cor do texto em vermelho */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: 2px solid #007bff; /* Borda vermelha */
+    border-radius: 8px; /* Espaçamento interno *//* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão */
+  .add-task-button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    color: white;
+  }
+  
+  /* Estilo para a lista de tarefas */
+  .task-list {
+    width: 100%;
+    max-width: 400px; /* Limita a largura da lista */
+    margin-top: 20px; /* Espaço acima da lista de tarefas */
+  }
+  

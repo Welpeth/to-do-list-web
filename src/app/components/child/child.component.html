@@ -1,0 +1,10 @@
+<div [class.completed]="task.isCompleted" class="task-item">
+  <h3>{{ task.title }}</h3>
+  <p>{{ task.description }}</p>
+  <small>Data de criação: {{ task.createdAt }}</small>
+  <div class="actions">
+      <input type="checkbox" [checked]="task.isCompleted" (change)="onToggleCompletion()" />
+      <label>Concluída</label>
+      <button class="delete-button" (click)="onDelete()">Excluir</button>
+  </div>
+</div>

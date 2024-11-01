@@ -1,0 +1,45 @@
+.task-item {
+    background-color: #ffffff; /* Cor de fundo da tarefa */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    margin-left: -75px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.actions {
+    display: flex; /* Usar flexbox para alinhar os itens */
+    align-items: center; /* Alinhar verticalmente os itens */
+    margin-top: 10px; /* Espaço acima da seção de ações */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Espaço à direita do checkbox */
+}
+
+label {
+    margin-right: 20px; /* Espaço à direita do label */
+}
+
+.delete-button {
+    background-color: #ffffff; /* Fundo branco para o botão de excluir */
+    color: #dc3545; /* Cor do texto em vermelho */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: 2px solid #dc3545; /* Borda vermelha */
+    border-radius: 8px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    margin-left: auto; /* Espaço automático à esquerda para empurrar o botão para a direita */
+}
+
+/* Efeito ao passar o mouse sobre o botão de excluir */
+.delete-button:hover {
+    background-color: #c82333; /* Vermelho mais escuro */
+    color: white;
+}
+
+/* Estilo quando a tarefa está concluída */
+.completed {
+    background-color: #e2f0d9; /* Fundo verde claro para tarefas concluídas */
+    text-decoration: line-through; /* Texto riscado */
+}

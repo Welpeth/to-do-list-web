@@ -1,0 +1,17 @@
+<div class="parent-container">
+  <h2>Lista de Tarefas</h2>
+  
+  <div class="task-inputs">
+    <input [(ngModel)]="newTaskTitle" placeholder="Título da Tarefa" class="task-input">
+    <input [(ngModel)]="newTaskDescription" placeholder="Descrição da Tarefa" class="task-input">
+    <button (click)="addTask()" class="add-task-button">Adicionar Tarefa</button>
+  </div>
+
+  <div class="task-list" *ngFor="let task of tasks">
+    <app-child 
+      [task]="task" 
+      (deleteTask)="deleteTask(task.id)" 
+      (toggleTaskCompletion)="toggleTaskCompletion(task.id)">
+    </app-child>
+  </div>
+</div>
